@@ -43,7 +43,7 @@ if ($con) {
                 margin:0 auto;'/>
                 <h3 
                 style='display: block;
-                margin:0 auto;'>You can also find the comic <a target='_blank' href='".$comicObject['location']."'>here</a></h3>";
+                margin:0 auto;'>You can also find the comic <a styles='color:indigo;' target='_blank' href='".$comicObject['location']."'>here</a></h3>";
                 
                 sendMail($mailArray, $subject, $header, $textContent, $footer, $location, $btnText);
                 // print_r($mailArray);
