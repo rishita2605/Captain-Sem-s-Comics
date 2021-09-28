@@ -2,4 +2,3 @@
 composer.phar
 .DS_Store
 .env
-config.php

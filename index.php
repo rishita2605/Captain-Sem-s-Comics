@@ -1,5 +1,6 @@
 <?php
   require_once $_SERVER['DOCUMENT_ROOT'].'/includes/db.php';
+  // print_r($_SERVER['DOCUMENT_ROOT'].'./includes/db.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">

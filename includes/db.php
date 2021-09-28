@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__DIR__).'/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/config.php';
 //dirname() returns the parent directory, so using ‘dirname(__DIR__)’ will return the parent directory of ‘__DIR__’.
 //connecting to database
 //when we use remote server, include those creds here
