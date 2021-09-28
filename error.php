@@ -5,7 +5,7 @@
       $error = $_GET['error'];
   }
 
-  switch($n){
+  switch($error){
     case 400:
       $errorText = "Bad Request. The server could not understand your request!";
       break;
