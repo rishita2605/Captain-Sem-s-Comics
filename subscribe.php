@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__.'/includes/header.php';
+    require_once $_SERVER['DOCUMENT_ROOT'].'/includes/header.php';
 
 $error="";
 $errorcode="";
@@ -99,7 +99,7 @@ if ($url==1) {
 
 <head>
   <?php
-    require_once __DIR__ . '\includes\header.php';
+    require_once $_SERVER['DOCUMENT_ROOT'].'/includes/header.php';
   ?>
   <link href="./includes/css/subscribe.css" rel="stylesheet" />
 </head>
@@ -447,6 +447,6 @@ if ($url==1) {
   </div>
 
   <?php
-    require_once __DIR__ . '\includes\footer.php';
+    require_once $_SERVER['DOCUMENT_ROOT'].'/includes/footer.php';
   ?>
 </body>

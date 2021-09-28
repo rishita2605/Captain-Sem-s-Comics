@@ -1,7 +1,7 @@
 <?php
-require_once __DIR__.'/modules/functions.php';
-require_once __DIR__.'/includes/db.php';
-require_once __DIR__.'/sendEmail.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/modules/functions.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/includes/db.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/sendEmail.php';
 
 $SERVER_NAME = isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : '';
 $parent = trim(strrchr(__DIR__, DIRECTORY_SEPARATOR), DIRECTORY_SEPARATOR);

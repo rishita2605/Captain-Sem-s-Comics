@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__.'/includes/header.php';
+    require_once $_SERVER['DOCUMENT_ROOT'].'/includes/header.php';
 
   $error="";
   $errorcode="";
@@ -74,7 +74,7 @@ if ($con) {
 <head>
 
   <?php
-    require_once __DIR__ . '\includes\header.php';
+    require_once $_SERVER['DOCUMENT_ROOT'].'/includes/header.php';
   ?>
 
   <link href="./includes/css/unsubscribe.css" rel="stylesheet" />
@@ -432,7 +432,7 @@ if ($con) {
     </div>
   </div> 
   <?php
-  require_once __DIR__ . '\includes\footer.php';
+  require_once $_SERVER['DOCUMENT_ROOT'].'/includes/header.php';
   ?>
 
 </body>
