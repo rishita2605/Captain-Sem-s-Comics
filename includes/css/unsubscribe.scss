@@ -57,14 +57,14 @@ body{
   align-items:flex-start;
   flex-direction: column;
   .error-code{
-    font-size: 7em;
+    font-size: 5em;
     color: $green;
     font-weight: 600;
     line-height: 1em;
   }
   .error-sub-heading, .error-desc{
     color: white;
-    font-size: 1.5em;
+    font-size: 1.26em;
     font-weight: 500;
   }
 
@@ -83,7 +83,7 @@ body{
       padding: 1vh 2vw;
       cursor: pointer;
       border-radius: 2em;
-      font-size: 1em;
+      font-size: 0.9em;
       margin: 0 1vw;
       transition: all 400ms ease;
       &:hover{
