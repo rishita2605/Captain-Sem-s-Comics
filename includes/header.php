@@ -11,5 +11,6 @@ include 'includes/db.php';
   href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
   rel="stylesheet">
   <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+  <link rel="icon" href="https://user-images.githubusercontent.com/64982040/135123453-3eb89a79-2772-4d3c-812a-8e982efdc540.png" type="image/icon type">
 <!-- <link href="./includes/css/yellow.css" rel="stylesheet" /> -->
 <title>Comic Mailer</title>
