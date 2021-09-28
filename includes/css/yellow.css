@@ -64,6 +64,7 @@ html {
   font-family: 'Poppins', sans-serif;
   height: 100%;
   width: 100%;
+  padding: 1em;
 }
 
 body {
@@ -103,7 +104,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 2em;
-  text-align: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -149,21 +149,21 @@ body {
 }
 
 .heading-1 {
-  font-size: 7em;
+  font-size: 5em;
   color: #FF5B79;
   font-weight: 600;
 }
 
 .heading-2 {
   color: white;
-  font-size: 1.7em;
+  font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .heading-3 {
   color: white;
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 500;
 }
 
@@ -225,7 +225,7 @@ body {
 }
 
 .form-group button {
-  padding: 0.5em 1em;
+  padding: 0.3em 0.9em;
   background: #FF5B79;
   border-radius: 0 1.2em 1.2em 1.2em;
   cursor: pointer;
