@@ -107,6 +107,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  text-align: left;
 }
 
 .ghost {
@@ -149,21 +150,21 @@ body {
 }
 
 .heading-1 {
-  font-size: 5em;
+  font-size: 4em;
   color: #FF5B79;
   font-weight: 600;
 }
 
 .heading-2 {
   color: white;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .heading-3 {
   color: white;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 500;
 }
 
@@ -181,7 +182,7 @@ body {
 
 .form-group input,
 .form-group button {
-  font-size: 1.26em;
+  font-size: 1.16em;
   padding: 0.7em;
   background: none;
   border: none;
