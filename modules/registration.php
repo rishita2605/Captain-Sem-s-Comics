@@ -78,7 +78,7 @@
           <h1 style='color:indigo;'> $OTP </h1></div>";
           
           $fromURL = 1; //if fromURL = 1, User has clicked on url from their mail
-          $location= "http://" . $SERVER_NAME .'/'.$ancestor.'/subscribe.php?email=' . $email . '&otp=' . md5($OTP) .'&fromURL='.$fromURL;
+          $location= "http://" . $SERVER_NAME.'/subscribe.php?email=' . $email . '&otp=' . md5($OTP) .'&fromURL='.$fromURL;
           $footer = "Or you can click on this button";
           $btnText = "Verify OTP";
         //   sendMail($email, $subject, $textContent, false, ''); // contains attachment -> false

@@ -1,7 +1,7 @@
 <?php
   /***********After the user enters otp, we check if it is the same as the one in db ***********/
   header('Content-type: application/json'); //returns json object
-  require_once dirname(__DIR__).'/sendEmail.php';
+  require_once $_SERVER['DOCUMENT_ROOT'].'/sendEmail.php';
   require_once './functions.php';
   require_once '../includes/db.php';
 
@@ -81,7 +81,7 @@
         ?>
         <script>
             resCode=500;
-            window.location.replace("<?php echo dirname(__DIR__);?>./error.php?error="+resCode);
+            window.location.replace("<?php echo $_SERVER['DOCUMENT_ROOT'];?>/error.php?error="+resCode);
         </script>
         <?php
         exit();
