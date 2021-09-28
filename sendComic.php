@@ -50,7 +50,7 @@ if ($con) {
                 // print_r($mailArray);
                 // $toEmail, $subject, $header, $textContent, $footer, $location, $btnText
             }
-            print_r("comic sent");
+            // print_r("comic sent");
         }
     } catch (Exception $e) {
       ?>
