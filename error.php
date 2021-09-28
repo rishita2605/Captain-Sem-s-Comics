@@ -33,7 +33,7 @@
 <head>
 
   <?php
-    require_once __DIR__ . '\includes\header.php';
+    require_once $_SERVER['DOCUMENT_ROOT'].'/includes/header.php';
   ?>
 
   <link href="./includes/css/error.css" rel="stylesheet" />
@@ -386,7 +386,7 @@
     </div>
   </div>
   <?php
-  require_once __DIR__ . '\includes\footer.php';
+  require_once $_SERVER['DOCUMENT_ROOT'].'/includes/footer.php';
   ?>
 
 </body>
