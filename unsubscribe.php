@@ -28,7 +28,6 @@ if ($con) {
         // $stmt->close();
 
         $rows=$stmt->num_rows;
-        print_r($rows);
 
         //email does not exist in db
         if ($rows===0) {
@@ -432,7 +431,7 @@ if ($con) {
     </div>
   </div> 
   <?php
-  require_once $_SERVER['DOCUMENT_ROOT'].'/includes/header.php';
+  require_once $_SERVER['DOCUMENT_ROOT'].'/includes/footer.php';
   ?>
 
 </body>
