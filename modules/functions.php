@@ -24,7 +24,7 @@ function getComic(){
     $result = json_decode(file_get_contents($url), true); 
     // file_get_contents() function in PHP is an inbuilt function which is used to read a file into a string.
     $category = 'location';
-    array_push($result, array($category => $url));
+    $data += [$category => $url];
     print_r($result);
   }catch(Exception $e){
     ?>
