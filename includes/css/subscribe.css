@@ -100,6 +100,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  text-align: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -108,7 +109,7 @@ body {
 }
 
 .right .error-code {
-  font-size: 7em;
+  font-size: 6.5em;
   color: #a8ff78;
   font-weight: 600;
   line-height: 1em;
@@ -116,14 +117,14 @@ body {
 
 .right .desc {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.26em;
   text-transform: uppercase;
   font-weight: 500;
 }
 
 .right .sub-heading {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.26em;
   font-weight: 500;
 }
 
@@ -169,6 +170,7 @@ body {
           justify-content: space-between;
   padding: 0 1vw;
   color: rgba(255, 255, 255, 0.5);
+  font-size: 1em;
 }
 
 .footer .right-footer {

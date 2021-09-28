@@ -132,7 +132,7 @@ body {
 
   input,
   button {
-    font-size: 1.16em;
+    font-size: 1.1em;
     padding: 0.7em;
     background: none;
     border: none;
@@ -207,6 +207,7 @@ input:focus {
   justify-content: space-between;
   padding: 0 1vw;
   color: rgba(255,255,255,0.5);
+  font-size: 1em;
   .right-footer{
     display: flex;
     justify-content: center;

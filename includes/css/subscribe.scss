@@ -62,24 +62,25 @@ body{
 .right{
   width: 65%;
   align-items:flex-start;
+  text-align: left;
   flex-direction: column;
   padding: 0 4em 0 0;
   .error-code{
-    font-size: 7em;
+    font-size: 6.5em;
     color: $green;
     font-weight: 600;
     line-height: 1em;
   }
   .desc{
     color: white;
-    font-size: 1.5em;
+    font-size: 1.26em;
     text-transform: uppercase;
     font-weight: 500;
   }
 
   .sub-heading{
     color: white;
-    font-size: 1.5em;
+    font-size: 1.26em;
     font-weight: 500;
   }
 }
@@ -114,6 +115,7 @@ body{
   justify-content: space-between;
   padding: 0 1vw;
   color: rgba(255,255,255,0.5);
+  font-size: 1em;
   .right-footer{
     display: flex;
     justify-content: center;

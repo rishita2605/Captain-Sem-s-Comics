@@ -55,8 +55,9 @@ body{
 .right{
   align-items:flex-start;
   flex-direction: column;
+  text-align: left;
   .error-code{
-    font-size: 12em;
+    font-size: 9em;
     color: $red;
     font-weight: 600;
     line-height: 1em;
@@ -96,6 +97,7 @@ body{
   justify-content: space-between;
   padding: 0 1vw;
   color: rgba(255,255,255,0.5);
+  font-size: 1em;
   .right-footer{
     display: flex;
     justify-content: center;
