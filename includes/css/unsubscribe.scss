@@ -1,0 +1,136 @@
+$grad-dark:#2E0916;
+$grad-light:#55465E;
+$red:#FF5B79;
+$green:#a8ff78;
+@keyframes moveGhost {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-8%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+@keyframes fireOpacity {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.3;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-image: linear-gradient(145deg, $grad-dark, $grad-light);
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.left, .right{
+  height: 100%;
+  width: 50%;
+  // border: 2px solid palegreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  align-items:flex-start;
+  flex-direction: column;
+  .error-code{
+    font-size: 7em;
+    color: $green;
+    font-weight: 600;
+    line-height: 1em;
+  }
+  .error-sub-heading, .error-desc{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .error-sub-heading{
+    text-transform: uppercase;
+  }
+
+  .error-desc{
+    display: flex;
+    margin-top: 2vh;
+    //border: 2px solid lawngreen;
+    .home-btn{
+      color: white;
+      background: linear-gradient(45deg, rgba(255,255,255, 0.2), rgba(255,255,255,0.4));
+      border: 1px solid rgba(255,255,255,0.4);
+      padding: 1vh 2vw;
+      cursor: pointer;
+      border-radius: 2em;
+      font-size: 1em;
+      margin: 0 1vw;
+      transition: all 400ms ease;
+      &:hover{
+        background: $red;
+      }
+    }
+  }
+}
+.ghost{
+  //border: 2px solid red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ghost, #red-fire{
+  animation: moveGhost 5s linear infinite alternate;
+}
+
+#red-fire{
+  animation: fireOpacity 5s linear infinite alternate, moveGhost 5s linear infinite alternate;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 7%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1vw;
+  color: rgba(255,255,255,0.5);
+  .right-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    margin: auto;
+  }
+}
