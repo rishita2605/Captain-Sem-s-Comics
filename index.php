@@ -1,12 +1,12 @@
 <?php
-  require_once __DIR__ . '\includes\db.php';
+  require_once $_SERVER['DOCUMENT_ROOT'].'/includes/db.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <?php
-    require_once __DIR__ . '\includes\header.php';
+    require_once './includes/header.php';
   ?>
   <link href="./includes/css/yellow.css" rel="stylesheet" />
 </head>
