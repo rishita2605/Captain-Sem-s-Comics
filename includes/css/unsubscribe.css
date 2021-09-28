@@ -130,11 +130,11 @@ body {
   color: white;
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
   border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 0.5em;
+  padding: 1vh 2vw;
   cursor: pointer;
   border-radius: 2em;
   font-size: 0.9em;
-  margin: 0 1vw;
+  margin: 0 0.5em;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
