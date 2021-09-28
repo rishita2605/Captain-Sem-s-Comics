@@ -41,6 +41,7 @@ html {
   font-family: 'Poppins', sans-serif;
   height: 100%;
   width: 100%;
+  padding: 1em;
 }
 
 body {
@@ -99,7 +100,7 @@ body {
 }
 
 .heading-1 {
-  font-size: 7em;
+  font-size: 5em;
   color: $red;
   font-weight: 600;
 
@@ -107,14 +108,14 @@ body {
 
 .heading-2 {
   color: white;
-  font-size: 1.7em;
+  font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .heading-3 {
   color: white;
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 500;
 }
 
