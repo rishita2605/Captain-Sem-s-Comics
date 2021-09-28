@@ -40,14 +40,17 @@ if ($con) {
                 color:indigo;'>".$title."</h1>
                 <img src='" . $comicObject['img'] . "' alt='Comic Image'
                 style='display: block;
-                margin:0 auto;'/>";
+                margin:0 auto;'/>
+                <h3 
+                style='display: block;
+                margin:0 auto;'>".$title."</h3>";
                 
                 // sendMail($mailArray, $subject, $textContent, false, $attachment); //comic attachment does not open
-                sendMail($mailArray, $subject, $header, $textContent, $footer, $location, $btnText);
+                // sendMail($mailArray, $subject, $header, $textContent, $footer, $location, $btnText);
                 // print_r($mailArray);
                 // $toEmail, $subject, $header, $textContent, $footer, $location, $btnText
             }
-            // print_r("comic sent");
+            print_r("comic sent");
         }
     } catch (Exception $e) {
       ?>

@@ -18,12 +18,14 @@ function getComic(){
     // get_headers — Fetches all the headers sent by the server in response to an HTTP request
     $headers=get_headers($url, 1); // 2nd param - 1, so returns an associative array, and we can directly access using $headers['Location]
     //but $headers['Location] --> returns an array with 2 elements, both of them are same afais
-    print_r($headers['Location'][0]);
+    // print_r($headers['Location'][0]);
     $url = $headers['Location'][0].'info.0.json';
-    print_r($url);
+    //print_r($url);
     $result = json_decode(file_get_contents($url), true); 
     // file_get_contents() function in PHP is an inbuilt function which is used to read a file into a string.
-    print_r($result);
+    $category = 'location';
+    array_push($result, array($category => $url));
+    // print_r(gettype($result));
   }catch(Exception $e){
     ?>
     <script>
