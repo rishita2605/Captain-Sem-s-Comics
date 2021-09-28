@@ -31,7 +31,7 @@ if ($con) {
                 // $textContent .= "<img src='" . $comicObject['img'] . "' alt='some comic hehe'/>";
                 // $textContent .= "To unsubscribe kindly visit <a href='http://" . $SERVER_NAME .'/'.$parent. '/unsubscribe.php?token=' . md5($mailArray) . ">here.</a>";
                 $header = "Hello Subscriber! We brought you a comic.";
-                $location = $_SERVER['DOCUMENT_ROOT']."/unsubscribe.php?token=" . md5($mailArray);
+                $location = "http://" . $SERVER_NAME ."/".$_SERVER['DOCUMENT_ROOT']. "/unsubscribe.php?token=" . md5($mailArray);
                 $btnText = "Unsubscribe";
                 $footer = "To stop getting these mails, click on the button.";
                 $textContent = "<h1 
