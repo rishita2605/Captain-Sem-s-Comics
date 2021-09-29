@@ -1,4 +1,4 @@
-console.log("Script")
+// console.log("Script")
 
 const register = './modules/registration.php' // links for php scripts from where we'll get our response
 const validate = './modules/validation.php' // links for php scripts from where we'll get our response
@@ -27,11 +27,11 @@ verifyotpbtn.addEventListener('click', verifyOTP)
 
 //this function will return a promise (after fetching data) which inturn needs to be fetched from their respective func
 async function request(link, method, body) {
-  console.log({
-    link,
-    method,
-    body
-  });
+  // console.log({
+  //   link,
+  //   method,
+  //   body
+  // });
 
   //fetch data
   let response = "";
@@ -72,9 +72,10 @@ async function verifyEmail() {
     //   status
     // } = data;
 
-    console.log({
-      data
-    })
+    // console.log({
+    //   data
+    // })
+
     switch (respstatus) {
       case 200:
         // Enter OTP send to your mail
@@ -121,7 +122,7 @@ async function verifyOTP() {
       otp: otp.value
     }))
 
-    console.log(otpdata['error'])
+    // console.log(otpdata['error'])
 
     switch (respstatus) {
       case 200:
