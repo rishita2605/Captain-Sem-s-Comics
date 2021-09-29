@@ -1,12 +1,12 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/config.php';
+// require_once $_SERVER['DOCUMENT_ROOT'].'/config.php';
 require_once $_SERVER['DOCUMENT_ROOT'].'/modules/functions.php';
 require 'vendor/autoload.php'; // If you're using Composer (recommended)
 
 function sendMail($toEmail, $subject, $header, $textContent, $footer, $location, $btnText)
 {
     $email = new \SendGrid\Mail\Mail();
-    $email->setFrom(FROM_EMAIL, FROM_NAME);
+    $email->setFrom(getenv('FROM_EMAIL'), getenv('FROM_NAME'));
     $email->setSubject($subject);
     // to email (Need to fetch from db)
     $email->addTo(strval($toEmail), "User");
@@ -63,7 +63,7 @@ function sendMail($toEmail, $subject, $header, $textContent, $footer, $location,
     );
 
 
-    $sendgrid = new \SendGrid(SENDGRID_API_KEY);
+    $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
     try {
         $response = $sendgrid->send($email);
         // print $response->statusCode() . "\n";
