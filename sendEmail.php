@@ -71,10 +71,12 @@ function sendMail($toEmail, $subject, $header, $textContent, $footer, $location,
         // print $response->body() . "\n";
         http_response_code($response->statusCode()); // check if this causes any problem
     } catch (Exception $e) {
-        // echo 'Caught exception: '. $e->getMessage() ."\n";
-        $jsonarray['error'] = 'Aw Snap! Something went wrong with the mailing services. Please try again after sometime';
-        return($jsonarray);
-        http_response_code(500);
-        exit();
+      ?>
+      <script>
+          resCode=500;
+          window.location.replace("./error.php?error="+resCode);
+      </script>
+      <?php
+      exit();
     }
 }
