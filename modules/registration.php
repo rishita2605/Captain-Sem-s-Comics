@@ -71,10 +71,10 @@
           //send mail for otp
           $SERVER_NAME = isset($_SERVER['SERVER_NAME']) ? $_SERVER['SERVER_NAME'] : '';
           $jsonarray['server'] = $SERVER_NAME;
-          $subject = 'OTP for Captain Seb\'s Comics';
+          $subject = 'OTP for Captain Sem\'s Comics';
 
           $header="Hey There! We brought your OTP";
-          $textContent  = "<div>Your OTP for email validation for Captain Seb's Comics is 
+          $textContent  = "<div>Your OTP for email validation for Captain Sem's Comics is 
           <h1 style='color:indigo;'> $OTP </h1></div>";
           
           $fromURL = 1; //if fromURL = 1, User has clicked on url from their mail
