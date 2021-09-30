@@ -81,9 +81,8 @@
           $location= "http://" . $SERVER_NAME.'/subscribe.php?email=' . $email . '&otp=' . md5($OTP) .'&fromURL='.$fromURL;
           $footer = "Or you can click on this button";
           $btnText = "Verify OTP";
-        //   sendMail($email, $subject, $textContent, false, ''); // contains attachment -> false
 
-          sendMail($email, $subject, $header, $textContent, $footer, $location, $btnText);
+          sendMail($email, $subject, $header, $textContent, $footer, $location, $btnText, NULL); //no attachment thus, NUll
       } catch (Exception $e) {
           ?>
         <script>

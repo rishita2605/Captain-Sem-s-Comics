@@ -45,7 +45,7 @@ if ($con) {
                 style='display: block;
                 margin:0 auto;'>You can also find the comic <a styles='color:indigo;' target='_blank' href='".$comicObject['location']."'>here</a></h3>";
                 
-                sendMail($mailArray, $subject, $header, $textContent, $footer, $location, $btnText);
+                sendMail($mailArray, $subject, $header, $textContent, $footer, $location, $btnText, $comicObject['img']); //has attachment
                 // print_r($mailArray);
                 // $toEmail, $subject, $header, $textContent, $footer, $location, $btnText
             }
