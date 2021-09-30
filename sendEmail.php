@@ -69,8 +69,8 @@ function sendMail($toEmail, $subject, $header, $textContent, $footer, $location,
     $file_encoded = base64_encode(file_get_contents($attachment));
     $email->addAttachment(
       $file_encoded,
-      "image/png",
-      "comic image",
+      "image/jpg",
+      "comicimage.jpg", //put filename with extension else error shows up
       "attachment"
     );
   }
