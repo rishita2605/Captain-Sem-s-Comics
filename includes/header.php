@@ -30,7 +30,27 @@ include 'includes/db.php';
     a = false;
   }
   if (a == true) {
-    window.location.assign("/mobile.html")
-    // window.close()
+      window.addEventListener('load', () => {
+      console.log('mobile')
+      const ghost = document.querySelector('.ghost')
+      console.log(ghost)
+      ghost.remove();
+
+      var head = document.getElementsByTagName('HEAD')[0];
+
+      // Create new link Element
+      var link = document.createElement('link');
+
+      // set the attributes for link element 
+      link.rel = 'stylesheet';
+
+      link.type = 'text/css';
+
+      link.href = './includes/css/mobilestyle.css';
+
+      // Append link element to HTML head
+      head.appendChild(link);
+
+    })
   }
 </script>
