@@ -105,7 +105,15 @@ if ($url == 1) {
 }
 
 if ($url == 0) {
-
+  if (!(isset($_GET['email']))) {
+    ?>
+    <script>
+      var resCode = 401;
+      window.location.replace('./error.php?error=' + resCode);
+    </script>
+  <?php
+    exit();
+  }
 
   $email = $_GET['email'];
 
