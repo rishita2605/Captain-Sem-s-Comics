@@ -127,7 +127,7 @@ async function verifyOTP() {
     switch (respstatus) {
       case 200:
         // Registration Sucessful
-        window.location.replace("./subscribe.php?fromURL=" + 0);
+        window.location.replace("./subscribe.php?fromURL=" + 0+"&email=" + sesEmail);
         break;
       // case 201: Already Registered
       // case 202: Enter Valid OTP && or OTP doesn't match
