@@ -28,7 +28,7 @@ if ($_GET['pwd'] != getenv('CRON_PWD')) {
     exit();
 }
 
-if ($con) {
+if ($con && $_GET['pwd'] === getenv('CRON_PWD')) {
     try {
         $stmt = $con->prepare('SELECT email FROM `subscriber` where activated=1'); // select all those email which are activated
         $stmt->execute();
