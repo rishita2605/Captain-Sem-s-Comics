@@ -44,7 +44,7 @@ body {
 #heading-3,
 .desc,
 .error-code,
-.sub-heading {
+.sub-heading, .error-sub-heading, .error-desc{
   font-size: 5vw !important;
 }
 
@@ -59,14 +59,37 @@ body {
 }
 
 .form-group input,
-.form-group button {
+.form-group button{
   font-size: 4vw;
   padding: 0.7em;
   color: white !important;
 }
 
-.form-group button {
+.form-group button{
   padding: 0.3em 1em;
   background: indigo;
   border-radius: 0 1.2em 1.2em 1.2em;
+}
+
+
+.right .error-desc .home-btn {
+  color: white !important;
+  cursor: pointer;
+  border-radius: 2em;
+  font-size: 4vw;
+  padding: 0.4em 1.1em;
+  background: indigo;
+}
+
+.right .error-desc .home-btn:hover {
+  background: indigo;
+  color: white !important;
+}
+
+.right .error-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
 }
