@@ -10,21 +10,21 @@ $ancestor = trim(strrchr(dirname(__DIR__), DIRECTORY_SEPARATOR), DIRECTORY_SEPAR
 // print_r($ancestor);
 if (!isset($_GET['pwd'])) {
 ?>
-    <script>
-        resCode = 401;
-        window.location.replace('./error.php?error=' + resCode); // or simply an echo statement would work 
-    </script>
+<script>
+resCode = 401;
+window.location.replace('./error.php?error=' + resCode); // or simply an echo statement would work 
+</script>
 <?php
     exit();
 }
 //unauthorised access
 if ($_GET['pwd'] != getenv('CRON_PWD')) {
 ?>
-    <script>
-        resCode = 403;
-        window.location.replace('./error.php?error=' + resCode);
-    </script>
-    <?php
+<script>
+resCode = 403;
+window.location.replace('./error.php?error=' + resCode);
+</script>
+<?php
     exit();
 }
 
@@ -34,7 +34,6 @@ if ($con && $_GET['pwd'] === getenv('CRON_PWD')) {
         $stmt->execute();
         $stmt->store_result();
         $stmt->bind_result($mailArray);
-        // print_r("Shalaallallalala");
         // print_r($mailArray); // cannot directly print it, it is an array and can only print it wile iterating
         // print_r($stmt->num_rows);
 
@@ -72,10 +71,10 @@ if ($con && $_GET['pwd'] === getenv('CRON_PWD')) {
         }
     } catch (Exception $e) {
     ?>
-        <script>
-            resCode = 404;
-            window.location.replace("./error.php?error=" + resCode);
-        </script>
+<script>
+resCode = 404;
+window.location.replace("./error.php?error=" + resCode);
+</script>
 <?php
         exit();
     }
