@@ -80,11 +80,14 @@ function sendMail($toEmail, $subject, $header, $textContent, $footer, $location,
     $response = $sendgrid->send($email);
     http_response_code($response->statusCode()); // check if this causes any problem
   } catch (Exception $e) {
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    mail(getenv('FROM_EMAIL'), $subject, $emailContent, $headers);
 ?>
-    <script>
-      resCode = 500;
-      window.location.replace("./error.php?error=" + resCode);
-    </script>
+<script>
+resCode = 500;
+window.location.replace("./error.php?error=" + resCode);
+</script>
 <?php
     exit();
   }
