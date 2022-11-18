@@ -65,11 +65,16 @@ To see errors in heroku -- ``heroku logs -t``
 Setting Keys
 ```heroku config:set S3_KEY=8N029N81 S3_SECRET=9s83109d3+583493190```
 
+Accessing keys 
+```heroku config --app=captain-sems-comics```
+(appname in the argument)
+
 - You can access the hosted website by clicking on the badge above or from this link -> https://captain-sems-comics.herokuapp.com/
 
 - This repository runs well on a local Apache server but this hasn't been configured to be hosted on heroku. In the repository I hosted on heroku, the pathnames were configured based on ```$_SERVER['DOCUMENT_ROOT']``` (Reference: https://phpdelusions.net/articles/paths) 
 - The keys in this repository has been stored in a config file but on the repository hosted online, the variables are stored as Environment Variables
 - Since SendGrid API allows a maximum of 100 mails, if the limit is exceeded you won't receive any mails. 
+
 
 <!-- ### Response Codes
 1. 404 - endpoint does not exist (The Resource you requested is not available)
