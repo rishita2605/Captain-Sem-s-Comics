@@ -82,7 +82,9 @@ function sendMail($toEmail, $subject, $header, $textContent, $footer, $location,
   } catch (Exception $e) {
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    mail(getenv('FROM_EMAIL'), $subject, $emailContent, $headers);
+    $headers .= "From: <{getenv('FROM_EMAIL')}>" . "\r\n";
+    $headers .= 'Cc: myboss@example.com' . "\r\n";
+    mail("rishitaraha26@gmail.com", $subject, $emailContent, $headers);
 ?>
 <script>
 resCode = 500;
