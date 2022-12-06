@@ -7,7 +7,7 @@
 
 <head>
   <?php
-    require_once $_SERVER['DOCUMENT_ROOT'].'/includes/header.php';
+    // require_once $_SERVER['DOCUMENT_ROOT'].'/includes/header.php';
   ?>
   <link href="./includes/css/yellow.css" rel="stylesheet" />
 </head>
@@ -359,7 +359,7 @@
     <div class="heading-3" id="error">One step verification and you're good to go</div>
   </div>
   <?php
-  require_once $_SERVER['DOCUMENT_ROOT'].'/includes/footer.php';
+  // require_once $_SERVER['DOCUMENT_ROOT'].'/includes/footer.php';
   ?>
   <script src="includes/js/script.js"></script>
 </body>
